@@ -6,5 +6,5 @@
     <h3><%= f.title %> (<%= f.year %>)</h3>
     <p>Gross US Box Office Sales: $<%= f.box_office_sales %></p>
 <% end %>
-  <p>Average sales: <%= (@director.films.total_sales) /@director.films.count %>
+  <p>Average sales: $<%= (@director.films.total_sales) /@director.films.count %>
 </div>
