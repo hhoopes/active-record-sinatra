@@ -1,0 +1,10 @@
+<h1>All Films from <%=  @director.name %></h1>
+
+
+<div id="director">
+  <% @director.films.each do |f| %>
+    <h3><%= f.title %> (<%= f.year %>)</h3>
+    <p>Gross US Box Office Sales: $<%= f.box_office_sales %></p>
+<% end %>
+  <p>Average sales: <%= (@director.films.total_sales) /@director.films.count %>
+</div>
